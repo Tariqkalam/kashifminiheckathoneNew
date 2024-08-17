@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <header>
+        <nav>
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="signin.html" id="sign-in">Sign-in</a></li>
+               <li><a href="#" id="logout">Logout</a></li>
+           </ul>
+        </nav>
+     </header>
+
+    <div class="container">
+        <h1>My Blog</h1>
+        <div id="postForm">
+            <input type="text" id="title" placeholder="Post Title">
+            <textarea id="content" placeholder="Post Content"></textarea>
+            <button id="submitPost">Submit Post</button>
+        </div>
+        <h2>Posts</h2>
+        <div id="posts"></div>
+    </div>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js"></script> -->
+    <script type="module" src="js/blog.js"></script>
+</body>
+</html>
